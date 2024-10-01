@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{lanche.get_name()}}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='lanche.css') }}">
+</head>
+<body>
+    <img id="img-lanche" src="{{ url_for('static', filename=lanche.get_image()) }}" />
+    <h1>{{lanche.get_name()}}</h1>
+    <p>Preço: R$ {{lanche.get_price()}}</p>
+    <p>Descrição: {{lanche.get_description()}}</p>
+</body>
+</html>
